@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
-import { MonPremierComponent } from './mon-premier/mon-premier.component';
 import { AppareilComponent } from './appareil/appareil.component';
 
 @NgModule({
@@ -12,7 +11,6 @@ import { AppareilComponent } from './appareil/appareil.component';
   declarations: [
     AppComponent,
     HelloComponent,
-    MonPremierComponent,
     AppareilComponent,
   ],
   bootstrap: [AppComponent],

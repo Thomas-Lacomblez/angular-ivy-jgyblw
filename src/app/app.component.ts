@@ -15,6 +15,16 @@ export class AppComponent {
     { name: 'Lave vaisselle', status: 'éteint' }
   ];
 
+  lastUpdate = new Promise<Date>( (resolve, reject) => {
+    const date = new Date();
+
+    setTimeout( () => {
+      resolve(date);
+    }, 2000)
+  });
+
+
+
   constructor() {
     setTimeout(() => {
       this.isAuth = true;

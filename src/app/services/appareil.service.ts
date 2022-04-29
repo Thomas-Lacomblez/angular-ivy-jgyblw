@@ -18,6 +18,14 @@ export class AppareilService {
       appareil.status = 'éteint';
   }
 
+  switchOneOn(index : number) {
+    this.appareils[index].status = 'allumé';
+  }
+
+  switchOffOn(index : number) {
+    this.appareils[index].status = 'éteint';
+  }
+
   constructor() { }
 
 }

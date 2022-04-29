@@ -7,18 +7,26 @@
 
       <ul class="list-group">
         <app-appareil 
-        *ngFor=" let appareil of appareils" 
-        [appareilName]="appareil.name"
-        [appareilStatus]="appareil.status"> </app-appareil>
+        *ngFor=" let appareil of appareils; let i = index"
+          [indexOfAppareil]="i"
+          [appareilName]="appareil.name"
+          [appareilStatus]="appareil.status"
+          style="margin-bottom:1em">
+        </app-appareil>
+      
       </ul>
-
+      <br />
+      <!-- 
+        [disabled]="!isAuth" -->
       <button
         class="btn btn-success"
-        [disabled]="!isAuth"
         (click)="onAllumer()"
-      >
+        style="margin-right:1em;">
         Tout Allumer
       </button>
+
+      <button class="btn btn-danger"
+          (click)="onEteindre()"> Tout éteindre</button>
     </div>
   </div>
 </div>

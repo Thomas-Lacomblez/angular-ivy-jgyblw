@@ -14,7 +14,6 @@ export class AppareilViewComponent implements OnInit {
 
   lastUpdate = new Promise<Date>( (resolve, reject) => {
     const date = new Date();
-
     setTimeout( () => {
       resolve(date);
     }, 2000)

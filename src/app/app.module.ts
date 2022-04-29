@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { AppareilComponent } from './appareil/appareil.component';
 
-import { AppareilService } from "./services/appareil.service"
+import { AppareilService } from "./services/appareil/appareil.service"
 import { AppareilViewComponent } from './appareil-view/appareil-view.component';
 import { AuthComponent } from './auth/auth.component';
 import { RouterModule, Routes } from '@angular/router';

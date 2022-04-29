@@ -1,5 +1,5 @@
 import { Component, VERSION, OnInit } from '@angular/core';
-import { AppareilService } from './services/appareil.service';
+import { AppareilService } from './services/appareil/appareil.service';
 
 @Component({
   selector: 'my-app',
